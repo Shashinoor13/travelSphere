@@ -34,6 +34,6 @@ void loginpage::on_pushButton_2_clicked()
 
 void loginpage::on_pushButton_3_clicked()
 {
-     QMessageBox::information(this,"Redirecting","Redirecting to google accounts page.");
+     QMessageBox::information(this,"Redirecting","Redirecting to google account page.");
 }
 
