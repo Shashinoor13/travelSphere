@@ -33,7 +33,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#loginpage{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/background.png&quot;);
+background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/background&quot;);
 }</string>
   </property>
   <widget class="QFrame" name="frame">
@@ -318,7 +318,7 @@ Go</string>
    </property>
    <property name="styleSheet">
     <string notr="true">*{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/logo-login.png&quot;);
+background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/logo-login.png&quot;);
 }</string>
    </property>
    <property name="text">

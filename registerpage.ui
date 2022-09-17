@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#registerpage{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/background.png&quot;);
+background-image:url(&quot;//Users/shashinoorghimire/Qt/projects/travelSphere/images/background&quot;);
 }</string>
   </property>
   <widget class="QLabel" name="label_5">
@@ -29,7 +29,7 @@ background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travel
    </property>
    <property name="styleSheet">
     <string notr="true">*{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/logo-login.png&quot;);
+background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/logo-login.png&quot;);
 }</string>
    </property>
    <property name="text">
