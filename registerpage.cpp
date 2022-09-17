@@ -2,6 +2,7 @@
 #include "ui_registerpage.h"
 #include "loginpage.h"
 #include <QMessageBox>
+#include <QRadioButton>
 
 registerpage::registerpage(QWidget *parent) :
     QDialog(parent),
@@ -26,15 +27,15 @@ void registerpage::on_pushButton_clicked()
      QString gender = ui->lineEdit->text();
      QString nationality = ui->lineEdit_2->text();
 
-     if(firstname != "" && lastname != "" && email != "" && username != "" && password != "" && date_of_birth != "" && gender != "" && nationality != "")
+if (ui->radioButton->isChecked()){
+     if(firstname != "" && lastname != "" && email != "" && username != "" && password != "" && date_of_birth != "" && gender != "" && nationality != "" && ui->radioButton->isChecked())
      {
-     if(ui->radioButton->isChecked())
-    {
+
         loginpage login;
         hide();
         login.exec();
-    }
-    else QMessageBox::warning(this,"Warnning!","You have not aggred to out terms and conditions.");
-     }
+     }}
+   else  QMessageBox::warning(this,"Warnning!","You have not aggred to out terms and conditions.");
+
 }
 
