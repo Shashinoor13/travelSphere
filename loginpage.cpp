@@ -41,7 +41,7 @@ void loginpage::on_pushButton_2_clicked()
     QMessageBox::information(this,"Redirecting","Redirecting to sign up page.");
     hide();
     registerpage reg;
-    reg.show();
+    reg.exec();
 }
 
 
