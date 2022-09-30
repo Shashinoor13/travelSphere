@@ -39,3 +39,12 @@ if (ui->radioButton->isChecked()){
 
 }
 
+
+void registerpage::on_pushButton_2_clicked()
+{
+
+    loginpage login;
+    hide();
+    login.exec();
+}
+

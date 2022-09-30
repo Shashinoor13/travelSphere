@@ -49,7 +49,7 @@ void loginpage::on_pushButton_3_clicked()
 {
      QMessageBox::information(this,"Redirecting","Redirecting to google account page.");
      hide();
-     QDesktopServices::openUrl(QUrl("http://www.google.com", QUrl::TolerantMode));
+     QDesktopServices::openUrl(QUrl("https://accounts.google.com/v3/signin/identifier?dsh=S-1895161926%3A1664513168845167&continue=https%3A%2F%2Ftakeout.google.com%2F&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession", QUrl::TolerantMode));
      show();
 }
 
