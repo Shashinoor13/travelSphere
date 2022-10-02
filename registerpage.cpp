@@ -34,23 +34,33 @@ void registerpage::on_pushButton_clicked()
         db.open();
          QSqlQuery aa;
          //preparing and binding the values
-         aa.prepare("INSERT INTO Users('firstname')VALUES(:firstname)");
-         aa.bindValue(":firstname",firstname);
-         aa.prepare("INSERT INTO Users('lastname')VALUES(:lastname)");
+         aa.prepare("INSERT INTO Users('firstname','lastname','email','username','password','date-of-birth','gender','nationality','Remarks')VALUES(:firstname,:lastname,:email,:username,:password,:date,:gender,:nationality,'sucess')");
+        aa.bindValue(":firstname",firstname);
+        aa.bindValue(":lastname",lastname);
+        aa.bindValue(":email",email);
+        aa.bindValue(":username",username);
+        aa.bindValue(":password",password);
+        aa.bindValue(":date",date_of_birth);
+        aa.bindValue(":gender",gender);
+        aa.bindValue(":nationality",nationality);
+         /*
+          *eseri lekhda milena hais
+          * aa.prepare("INSERT INTO Users('lastname')VALUES(':lastname')");
          aa.bindValue(":lastname",lastname);
-         aa.prepare("INSERT INTO Users('email')VALUES(:firstname)");
+         aa.prepare("INSERT INTO Users('email')VALUES(':firstname')");
          aa.bindValue(":firstname",email);
-         aa.prepare("INSERT INTO Users('username')VALUES(:username)");
+         aa.prepare("INSERT INTO Users('username')VALUES(':username')");
          aa.bindValue(":username",username);
-         aa.prepare("INSERT INTO Users('password')VALUES(:password)");
+         aa.prepare("INSERT INTO Users('password')VALUES(':password')");
          aa.bindValue(":password",password);
-         aa.prepare("INSERT INTO Users('date-of-birth')VALUES(:date)");
+         aa.prepare("INSERT INTO Users('date-of-birth')VALUES(':date')");
          aa.bindValue(":date",date_of_birth);
-         aa.prepare("INSERT INTO Users('gender')VALUES(:gender)");
+         aa.prepare("INSERT INTO Users('gender')VALUES(':gender')");
          aa.bindValue(":gender",gender);
-         aa.prepare("INSERT INTO Users('nationality')VALUES(:nationality)");
+         aa.prepare("INSERT INTO Users('nationality')VALUES(':nationality')");
          aa.bindValue(":nationality",nationality);
-         aa.prepare("INSERT INTO Users('Remarks')VALUES('Remarks')");
+         aa.prepare("INSERT INTO Users('Remarks')VALUES('Remarks')");*/
+
 
 
 if (ui->radioButton->isChecked()){
