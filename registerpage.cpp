@@ -19,7 +19,7 @@ registerpage::~registerpage()
 void registerpage::on_pushButton_clicked()
 {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    //esma databasae ko path halney hai
+    //esma databasae ko path halney hai pichadi .sqlite extension vako .sqbpro wala haina
     db.setDatabaseName("/Users/shashinoorghimire/Qt/projects/build-travelSphere_in_Qmake-Qt_6_3_2_for_macOS-Release/database/userdatabase.sqlite");
     //declaring the variables
      QString firstname = ui->lineEdit_6->text();
