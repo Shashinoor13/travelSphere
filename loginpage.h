@@ -2,6 +2,8 @@
 #define LOGINPAGE_H
 
 #include <QDialog>
+#include<QtSql>
+#include<QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class loginpage; }

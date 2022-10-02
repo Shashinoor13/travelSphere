@@ -29,12 +29,19 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>loginpage</string>
+   <string>travelSphere</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Downloads/Vector-3.png</normaloff>../../../Downloads/Vector-3.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">#loginpage{
 background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/background&quot;);
 }</string>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
