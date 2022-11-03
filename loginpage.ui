@@ -24,7 +24,7 @@
   </property>
   <property name="font">
    <font>
-    <family>Futura</family>
+    <family>Times New Roman</family>
     <pointsize>20</pointsize>
    </font>
   </property>
@@ -37,7 +37,11 @@
   </property>
   <property name="styleSheet">
    <string notr="true">#loginpage{
-background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/background&quot;);
+/*background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/images/background&quot;);*/
+	background-color: qlineargradient(spread:pad, x1:0.280788, y1:0.0113636, x2:0.330039, y2:1, stop:0 rgba(161, 228, 231, 255), stop:1 rgba(255, 255, 255, 255));
+}
+*{
+font-family:&quot;Times New Roman&quot;;
 }</string>
   </property>
   <property name="modal">
@@ -52,9 +56,15 @@ background-image:url(&quot;/Users/shashinoorghimire/Qt/projects/travelSphere/ima
      <height>580</height>
     </rect>
    </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
    <property name="styleSheet">
     <string notr="true">#frame{
-background:#B3F4D4;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(123, 193, 215, 1), stop:1 rgba(126, 174, 218, 75));
 border-radius:50px;
 }</string>
    </property>
@@ -87,7 +97,7 @@ font-size:15px;
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>130</x>
       <y>280</y>
       <width>341</width>
       <height>20</height>
@@ -95,199 +105,177 @@ font-size:15px;
     </property>
     <property name="styleSheet">
      <string notr="true">*{
-color:black;
-font-family:Helvetica;
+color:red;
 }</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>491</x>
-     <y>119</y>
-     <width>614</width>
-     <height>43</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
-color:black;
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>500</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+border-radius:10px;
+color:grey;
+background:#F5E0E0;
 }</string>
-   </property>
-   <property name="text">
-    <string>Username/Email-address</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>491</x>
-     <y>250</y>
-     <width>614</width>
-     <height>43</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
-color:black;
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>220</y>
+      <width>500</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>25</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+border-radius:10px;
+color:grey;
+background:#F5E0E0;
+
 }</string>
-   </property>
-   <property name="text">
-    <string>Password</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>472</x>
-     <y>162</y>
-     <width>761</width>
-     <height>54</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>25</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
-background-color:white;
-border-radius:22px;
-color:black;
-}</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>472</x>
-     <y>290</y>
-     <width>761</width>
-     <height>54</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>25</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
-background-color:white;
-border-radius:22px;
-color:black;
-}</string>
-   </property>
-   <property name="echoMode">
-    <enum>QLineEdit::Password</enum>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>738</x>
-     <y>403</y>
-     <width>229</width>
-     <height>45</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>30</pointsize>
-    </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
-border-radius:22px;
-background-color:#5B7279;
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>320</y>
+      <width>229</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>30</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <stylestrategy>PreferAntialias</stylestrategy>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+border-radius:9px;
+	background-color: qlineargradient(spread:pad, x1:0.0788177, y1:0.380682, x2:1, y2:0, stop:0.0640394 rgba(250, 130, 78, 255), stop:1 rgba(224, 206, 107, 255));
 color:white;
+font-family:&quot;Times New Roman&quot;;
+	border-color: rgb(0,0,0);
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+*:hover{
+color:#F5E0E0;
 }</string>
-   </property>
-   <property name="text">
-    <string>LOGIN</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_2">
-   <property name="geometry">
-    <rect>
-     <x>670</x>
-     <y>469</y>
-     <width>366</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>20</pointsize>
-     <underline>false</underline>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+    <property name="icon">
+     <iconset theme="window-new"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>380</y>
+      <width>366</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
 border-radius:12px;
 background-color:#5B7279;
 color:white;
 }</string>
-   </property>
-   <property name="text">
-    <string>Don't have an account? Sign Up</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_3">
-   <property name="geometry">
-    <rect>
-     <x>738</x>
-     <y>519</y>
-     <width>229</width>
-     <height>29</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Futura</family>
-     <pointsize>20</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">*{
+    </property>
+    <property name="text">
+     <string>Don't have an account? Sign Up</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>420</y>
+      <width>229</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
 border-radius:13px;
 background-color:#5B7279;
 color:white;
 }</string>
-   </property>
-   <property name="text">
-    <string>Sign in with Google</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>Sign in with Google</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
@@ -300,13 +288,13 @@ color:white;
    </property>
    <property name="font">
     <font>
-     <family>Helvetica</family>
+     <family>Times New Roman</family>
      <pointsize>85</pointsize>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">*{
-color:#5B7279;
+	color: rgb(34, 30, 88);
 }</string>
    </property>
    <property name="text">

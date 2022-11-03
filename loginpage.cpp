@@ -7,6 +7,10 @@
 #include <QUrl>
 #include <QtCore>
 #include<QTime>
+#include<QPixmap>
+#include"homepage.h"
+
+
 loginpage::loginpage(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::loginpage)
@@ -25,15 +29,40 @@ void loginpage::on_pushButton_clicked()
     QString username = ui->lineEdit->text();
     QString password = ui->lineEdit_2->text();
 
-    if (username == "admin" && password == "admin"){
-        ui->label_6->setText("Login Sucessfull.");
-        homepage home;
-        hide();
-        home.setModal(true);
-        home.exec();
+    QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("/Users/shashinoorghimire/Qt/projects/build-travelSphere_in_Qmake-Qt_6_3_2_for_macOS-Release/database/userdatabase.sqlite");
+
+    if(db.open())
+    {
+        QSqlQuery qry;
+        int count=0;
+        if(qry.exec("select * from Users where username='"+username+"' and password='"+password+"'"))
+        {
+            while(qry.next())
+            {
+                QString user_id="setText(qry.value(0).toString())";
+                count++;
+            }
+            if(count==1)
+            {
+                homepage h1;
+                h1.setModal(true);
+                hide();
+                h1.exec();
+
+            }
+            else
+            {
+                ui->label_6->setText("Username/Password Incorrect");
+            }
+        }
+
+
     }
-    else ui->label_6->setText("Username/Password incorrect!");
-}
+    else
+        QMessageBox::information(this,"Connection","Database not connected");
+    }
+
 
 
 void loginpage::on_pushButton_2_clicked()

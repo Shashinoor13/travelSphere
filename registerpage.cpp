@@ -22,13 +22,14 @@ void registerpage::on_pushButton_clicked()
     //esma databasae ko path halney hai pichadi .sqlite extension vako .sqbpro wala haina
     db.setDatabaseName("/Users/shashinoorghimire/Qt/projects/build-travelSphere_in_Qmake-Qt_6_3_2_for_macOS-Release/database/userdatabase.sqlite");
     //declaring the variables
+     QDate DOB = ui->dateEdit->date();
      QString firstname = ui->lineEdit_6->text();
      QString lastname = ui->lineEdit_5->text();
      QString email = ui->lineEdit_7->text();
      QString username = ui->lineEdit_8->text();
      QString password = ui->lineEdit_4->text();
-     QString date_of_birth = ui->lineEdit_3->text();
-     QString gender = ui->lineEdit->text();
+     QString date_of_birth = DOB.toString();
+     QString gender = ui->comboBox->currentText();
      QString nationality = ui->lineEdit_2->text();
      //opening databsaae
         db.open();
