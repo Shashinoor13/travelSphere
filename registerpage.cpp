@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QRadioButton>
 
+
 registerpage::registerpage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::registerpage)
@@ -44,23 +45,6 @@ void registerpage::on_pushButton_clicked()
         aa.bindValue(":date",date_of_birth);
         aa.bindValue(":gender",gender);
         aa.bindValue(":nationality",nationality);
-         /*
-          *eseri lekhda milena hais
-          * aa.prepare("INSERT INTO Users('lastname')VALUES(':lastname')");
-         aa.bindValue(":lastname",lastname);
-         aa.prepare("INSERT INTO Users('email')VALUES(':firstname')");
-         aa.bindValue(":firstname",email);
-         aa.prepare("INSERT INTO Users('username')VALUES(':username')");
-         aa.bindValue(":username",username);
-         aa.prepare("INSERT INTO Users('password')VALUES(':password')");
-         aa.bindValue(":password",password);
-         aa.prepare("INSERT INTO Users('date-of-birth')VALUES(':date')");
-         aa.bindValue(":date",date_of_birth);
-         aa.prepare("INSERT INTO Users('gender')VALUES(':gender')");
-         aa.bindValue(":gender",gender);
-         aa.prepare("INSERT INTO Users('nationality')VALUES(':nationality')");
-         aa.bindValue(":nationality",nationality);
-         aa.prepare("INSERT INTO Users('Remarks')VALUES('Remarks')");*/
 
 
 
@@ -69,7 +53,7 @@ if (ui->radioButton->isChecked()){
      {
          //executing the commands after checking all the criterias.
          aa.exec();
-         QMessageBox::information(this,"","acount created sucessfully");
+         QMessageBox::information(this,"","account created sucessfully");
          loginpage login;
          hide();
          login.exec();

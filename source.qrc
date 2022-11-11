@@ -2,5 +2,9 @@
     <qresource prefix="/images">
         <file>images/background.png</file>
         <file>images/logo-login.png</file>
+        <file>App Frame-9.png</file>
+        <file>home-page.png</file>
+        <file>travelSphere.png</file>
+        <file>icons8-search-30.png</file>
     </qresource>
 </RCC>

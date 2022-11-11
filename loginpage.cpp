@@ -1,15 +1,18 @@
 #include "loginpage.h"
 #include "ui_loginpage.h"
-#include "homepage.h"
 #include "registerpage.h"
+#include "mainwindow.h"
 #include<QMessageBox>
 #include <QDesktopServices>
 #include <QUrl>
 #include <QtCore>
 #include<QTime>
 #include<QPixmap>
-#include"homepage.h"
 
+
+QString username;
+
+void login();
 
 loginpage::loginpage(QWidget *parent)
     : QDialog(parent)
@@ -26,7 +29,7 @@ loginpage::~loginpage()
 
 void loginpage::on_pushButton_clicked()
 {
-    QString username = ui->lineEdit->text();
+    username = ui->lineEdit->text();
     QString password = ui->lineEdit_2->text();
 
     QSqlDatabase db=QSqlDatabase::addDatabase("QSQLITE");
@@ -45,11 +48,9 @@ void loginpage::on_pushButton_clicked()
             }
             if(count==1)
             {
-                homepage h1;
-                h1.setModal(true);
-                hide();
-                h1.exec();
-
+                this->close();
+                    MainWindow *mainWindow = new MainWindow();
+                    mainWindow->show();
             }
             else
             {

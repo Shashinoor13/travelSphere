@@ -6,359 +6,287 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>720</height>
+    <width>1249</width>
+    <height>888</height>
    </rect>
   </property>
-  <property name="maximumSize">
+  <property name="minimumSize">
    <size>
-    <width>1280</width>
-    <height>720</height>
+    <width>1249</width>
+    <height>888</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <kerning>false</kerning>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
   <property name="windowTitle">
-   <string>travelSphere</string>
+   <string>Homepage</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="source.qrc">
+    <normaloff>:/images/images/logo-login.png</normaloff>:/images/images/logo-login.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">#MainWindow{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/background.png&quot;);
-}
-#frame{
-background-color:#B3F4D4;
-border-radius:50px;
-}</string>
+   <string notr="true"/>
   </property>
   <property name="documentMode">
-   <bool>false</bool>
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
+   <property name="sizeIncrement">
+    <size>
+     <width>1280</width>
+     <height>832</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">.QWidget{background-image: url(:/images/home-page.png);}</string>
+   </property>
+   <widget class="QLabel" name="Logo">
     <property name="geometry">
      <rect>
-      <x>457</x>
-      <y>70</y>
-      <width>791</width>
-      <height>580</height>
+      <x>60</x>
+      <y>40</y>
+      <width>221</width>
+      <height>31</height>
      </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>290</y>
-       <width>321</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">*{
-font-family:Futura;
-color:balck;
-font-size:15px;
-}</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_username">
-    <property name="geometry">
-     <rect>
-      <x>491</x>
-      <y>119</y>
-      <width>614</width>
-      <height>43</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Futura</family>
-      <pointsize>30</pointsize>
-     </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">*{
-color:black;
-}</string>
+     <string notr="true">background-repeat:no-repeat;
+background-image: url(:/images/travelSphere.png);</string>
     </property>
     <property name="text">
-     <string>Username/Email-address</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_password">
-    <property name="geometry">
-     <rect>
-      <x>491</x>
-      <y>250</y>
-      <width>614</width>
-      <height>43</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Futura</family>
-      <pointsize>30</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-color:black;
-}</string>
-    </property>
-    <property name="text">
-     <string>Password</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_username">
-    <property name="geometry">
-     <rect>
-      <x>472</x>
-      <y>162</y>
-      <width>761</width>
-      <height>54</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-background-color:white;
-border-radius:27px;
-color:black;
-font-size:25px;
-}
-</string>
-    </property>
-    <property name="inputMethodHints">
-     <set>Qt::ImhNone</set>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_password">
-    <property name="geometry">
-     <rect>
-      <x>472</x>
-      <y>293</y>
-      <width>761</width>
-      <height>54</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-background-color:white;
-border-radius:27px;
-color:black;
-font-size:25px;
-}
-</string>
-    </property>
-    <property name="inputMethodHints">
-     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
-    </property>
-    <property name="inputMask">
      <string/>
     </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Password</enum>
-    </property>
-    <property name="cursorPosition">
-     <number>0</number>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
    </widget>
-   <widget class="QLabel" name="label_Slogan">
+   <widget class="QWidget" name="horizontalWidget1" native="true">
     <property name="geometry">
      <rect>
-      <x>41</x>
-      <y>252</y>
-      <width>311</width>
-      <height>221</height>
+      <x>50</x>
+      <y>580</y>
+      <width>1141</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">*{
-font-size:85px;
-font-family:Helvetica;
-color:#5B7279;
-}</string>
+     <string notr="true">background:none;</string>
     </property>
-    <property name="text">
-     <string>Pick &amp;
-Go</string>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>-1</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="Location_2">
+       <property name="styleSheet">
+        <string notr="true">background: rgba(240, 240, 240, 0.45);
+border: 1px solid #FFFFFF;
+
+border-radius:16px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Location_3">
+       <property name="styleSheet">
+        <string notr="true">background: rgba(240, 240, 240, 0.45);
+border: 1px solid #FFFFFF;
+
+border-radius:16px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Location_1">
+       <property name="styleSheet">
+        <string notr="true">background: rgba(240, 240, 240, 0.45);
+border: 1px solid #FFFFFF;
+
+border-radius:16px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="Location_4">
+       <property name="styleSheet">
+        <string notr="true">background: rgba(240, 240, 240, 0.45);
+border: 1px solid #FFFFFF;
+
+border-radius:16px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>751</x>
-      <y>403</y>
-      <width>229</width>
-      <height>45</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-background: #5B7279;
-border-radius: 22px;
-font-family:Futura;
-font-weight:bold;
-font-size:30px;
-color:white;
-}</string>
-    </property>
-    <property name="text">
-     <string>LOGIN</string>
-    </property>
-    <property name="autoDefault">
-     <bool>true</bool>
-    </property>
-    <property name="default">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_signup">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>469</y>
-      <width>366</width>
-      <height>29</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">*{
-background: #5B7279;
-border-radius: 12px;
-font-family:Futura;
-font-size:20px;
-color:white;
-}</string>
-    </property>
-    <property name="text">
-     <string>Don't have an account?Sign up</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_google">
-    <property name="geometry">
-     <rect>
-      <x>738</x>
-      <y>519</y>
-      <width>229</width>
-      <height>29</height>
+      <x>60</x>
+      <y>450</y>
+      <width>271</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">*{
-background: #5B7279;
-border-radius: 13px;
-font-family:Futura;
-font-weight:medium;
-font-size:20px;
-color:white;
-}</string>
+     <string notr="true">font-size:30px;
+color:black;
+font-family:Times New Roman</string>
     </property>
     <property name="text">
-     <string>Sign in with Google</string>
+     <string>Popular Destinations</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>70</y>
-      <width>331</width>
-      <height>91</height>
+      <x>60</x>
+      <y>490</y>
+      <width>451</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:black;
+font-size:20px;
+font: 13pt &quot;Andale Mono&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Vacations to make your experience enjoyable in Nepal!</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>371</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{color:black;
+background:none;}
+.QPushButton{
+border-radius:2px;
+	font: 14pt &quot;Andale Mono&quot;;
+}
+*:hover{
+text-decoration:underline;
+	color: rgb(91, 34, 105);
+}</string>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="ContactUs">
+       <property name="text">
+        <string>Contact Us</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Services">
+       <property name="text">
+        <string>Services</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="Profile">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>45</y>
+      <width>100</width>
+      <height>32</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">*{
-background-image:url(&quot;/Users/shashinoorghimire/Documents/Qt/projects/travelSphere/images/logo-login.png&quot;)
+border-radius:9px;
+	background-color: qlineargradient(spread:pad, x1:0.0788177, y1:0.380682, x2:1, y2:0, stop:0.0640394 rgba(250, 130, 78, 255), stop:1 rgba(224, 206, 107, 255));
+color:white;
+	font: 13pt &quot;Monaco&quot;;
+	border-color: rgb(0,0,0);
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+*:hover{
+color:#F5E0E0;
 }</string>
+    </property>
+    <property name="text">
+     <string>Profile</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>45</y>
+      <width>261</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(150, 150, 255,50);
+color:grey;
+border-radius:10px;
+font-family:Andale Mono;</string>
+    </property>
+    <property name="backgroundVisible">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>45</y>
+      <width>31</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:3px;
+background-image: url(:/images/icons8-search-30.png);
+background-repeat:no-repeat;</string>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1280</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>Help</string>
-    </property>
-    <addaction name="actionHelp"/>
-   </widget>
-   <widget class="QMenu" name="menuContact_Us">
-    <property name="title">
-     <string>About Us</string>
-    </property>
-    <widget class="QMenu" name="menuContact_Us_2">
-     <property name="title">
-      <string>Contact Us</string>
-     </property>
-     <widget class="QMenu" name="menuTeam_Members">
-      <property name="title">
-       <string>Team Members</string>
-      </property>
-      <addaction name="actionSiddharth_Chaudhary"/>
-      <addaction name="actionShashinoor_Ghimire"/>
-      <addaction name="actionDiya_Neupane"/>
-      <addaction name="actionSantosh_Yadav"/>
-      <addaction name="separator"/>
-     </widget>
-     <addaction name="menuTeam_Members"/>
-    </widget>
-    <addaction name="menuContact_Us_2"/>
-   </widget>
-   <addaction name="menuHelp"/>
-   <addaction name="menuContact_Us"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionHelp">
-   <property name="text">
-    <string>Help</string>
-   </property>
-  </action>
-  <action name="actionSiddharth_Chaudhary">
-   <property name="text">
-    <string>Siddharth Chaudhary</string>
-   </property>
-  </action>
-  <action name="actionShashinoor_Ghimire">
-   <property name="text">
-    <string>Shashinoor Ghimire</string>
-   </property>
-  </action>
-  <action name="actionDiya_Neupane">
-   <property name="text">
-    <string>Diya Neupane</string>
-   </property>
-  </action>
-  <action name="actionSantosh_Yadav">
-   <property name="text">
-    <string>Santosh Yadav</string>
-   </property>
-  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
  <connections/>
 </ui>
