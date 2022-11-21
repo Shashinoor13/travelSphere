@@ -1,14 +1,15 @@
 #include "loginpage.h"
 #include "registerpage.h"
+#include "booking.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //registerpage r;
+    Booking b;
     loginpage w;
     registerpage r;
-   // r.show();
     w.show();
+    b.show();
     return a.exec();
 }

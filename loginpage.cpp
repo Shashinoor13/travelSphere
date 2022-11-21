@@ -68,7 +68,6 @@ void loginpage::on_pushButton_clicked()
 
 void loginpage::on_pushButton_2_clicked()
 {
-    QMessageBox::information(this,"Redirecting","Redirecting to sign up page.");
     hide();
     registerpage reg;
     reg.exec();
@@ -77,7 +76,6 @@ void loginpage::on_pushButton_2_clicked()
 
 void loginpage::on_pushButton_3_clicked()
 {
-     QMessageBox::information(this,"Redirecting","Redirecting to google account page.");
      hide();
      QDesktopServices::openUrl(QUrl("https://accounts.google.com/v3/signin/identifier?dsh=S-1895161926%3A1664513168845167&continue=https%3A%2F%2Ftakeout.google.com%2F&ec=GAlAwAE&flowName=GlifWebSignIn&flowEntry=AddSession", QUrl::TolerantMode));
      show();
